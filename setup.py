@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from setuptools import setup
-
 setup(name='psychopy-phidgets',
     version='0.1',
     description='Psychopy plugin providing support for Phidgets',
@@ -16,11 +15,16 @@ setup(name='psychopy-phidgets',
         'Programming Language :: Python :: 3'
     ],
     keywords='psychopy phidgets',
-    packages=['psychopy_phidgets'],
+    packages=['psychopy_phidgets','psychopy_phidgets.hardware','psychopy_phidgets.experiment.components.phidgets'],
     install_requires=['psychopy'],
     include_package_data=True,
     entry_points={
-        'psychopy.hardware': ['phidgets = psychopy_phidgets.hardware.phidgets.py'],
-        'psychopy.experiment.components': ['phidgets = psychopy_phidgets.experiment.compoenents.__init__.py']
+        'psychopy.hardware': ['phidgetOutputComponent = psychopy_phidgets.hardware.phidgets:phidgetOutputComponent'],
+        'psychopy.experiment.components': ['PhidgetRelayComponent = psychopy_phidgets.experiment.components.phidgets.prc:PhidgetRelayComponent']
     },
+    # entry_points={
+    #     'psychopy.hardware': ['phidgets = psychopy_phidgets.hardware.phidgets'],
+    #     'psychopy.experiment.components': ['phidgets = psychopy_phidgets.experiment.components.phidgets']
+    # },
+
     zip_safe=False)
