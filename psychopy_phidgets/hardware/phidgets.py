@@ -17,7 +17,7 @@ from psychopy import core
 
 all_phidgets = {}
 
-class phidgetOutputComponent:
+class PhidgetOutputComponent:
     def __init__(self, channelList=None, serialNumber=-1, reversedRelay=False):
         """
 

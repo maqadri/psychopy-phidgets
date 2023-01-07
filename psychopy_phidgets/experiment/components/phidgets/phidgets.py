@@ -84,7 +84,7 @@ class PhidgetRelayComponent(BaseComponent):
 
     def writeRunOnceInitCode(self, buff):
         code = ('# Initialize relays\n'
-                '%(name)s = phidgets.phidgetOutputComponent(channelList = %(channelList)s, '
+                '%(name)s = phidgets.PhidgetOutputComponent(channelList = %(channelList)s, '
                                                            'serialNumber = %(serialNumber)s, '
                                                            'reversedRelay = %(reversedRelay)s)\n'
                 % self.params )

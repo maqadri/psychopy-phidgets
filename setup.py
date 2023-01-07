@@ -19,12 +19,7 @@ setup(name='psychopy-phidgets',
     install_requires=['psychopy'],
     include_package_data=True,
     entry_points={
-        'psychopy.hardware': ['phidgetOutputComponent = psychopy_phidgets.hardware.phidgets:phidgetOutputComponent'],
-        'psychopy.experiment.components': ['PhidgetRelayComponent = psychopy_phidgets.experiment.components.phidgets.prc:PhidgetRelayComponent']
+        'psychopy.hardware': ['PhidgetOutputComponent = psychopy_phidgets.hardware.phidgets:PhidgetOutputComponent'],
+        'psychopy.experiment.components': ['PhidgetRelayComponent = psychopy_phidgets.experiment.components.phidgets.phidgets:PhidgetRelayComponent']
     },
-    # entry_points={
-    #     'psychopy.hardware': ['phidgets = psychopy_phidgets.hardware.phidgets'],
-    #     'psychopy.experiment.components': ['phidgets = psychopy_phidgets.experiment.components.phidgets']
-    # },
-
     zip_safe=False)
