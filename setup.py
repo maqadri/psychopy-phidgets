@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 from setuptools import setup
 setup(name='psychopy-phidgets',
-    version='0.1.1',
+    version='0.1.2',
     description='Psychopy plugin providing support for Phidgets',
     long_description='',
     url='https://github.com/maqadri/psychopy-phidgets',
