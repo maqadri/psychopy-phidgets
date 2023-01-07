@@ -15,7 +15,12 @@ setup(name='psychopy-phidgets',
         'Programming Language :: Python :: 3'
     ],
     keywords='psychopy phidgets',
-    packages=['psychopy_phidgets','psychopy_phidgets.hardware','psychopy_phidgets.experiment.components.phidgets'],
+    packages=['psychopy_phidgets',
+              'psychopy_phidgets.hardware',
+              'psychopy_phidgets.experiment.components.phidgets',
+              'psychopy_phidgets.experiment.components.phidgets.light',
+              'psychopy_phidgets.experiment.components.phidgets.dark',
+              'psychopy_phidgets.experiment.components.phidgets.classic'],
     install_requires=['psychopy'],
     include_package_data=True,
     entry_points={
