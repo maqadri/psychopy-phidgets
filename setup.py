@@ -16,7 +16,7 @@ setup(name='psychopy-phidgets',
         'Programming Language :: Python :: 3'
     ],
     keywords='psychopy phidgets',
-    packages=['psychopy_rect_area'],
+    packages=['psychopy_phidgets'],
     install_requires=['psychopy'],
     include_package_data=True,
     entry_points={
