@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 from setuptools import setup
 setup(name='psychopy-phidgets',
-    version='0.1',
+    version='0.1.1',
     description='Psychopy plugin providing support for Phidgets',
     long_description='',
     url='https://github.com/maqadri/psychopy-phidgets',
@@ -11,7 +11,7 @@ setup(name='psychopy-phidgets',
     license='GPL3',
     classifiers=[
         'Development Status :: 4 - Beta',
-        'License :: OSI Approved :: GPL3 License',
+        'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
         'Programming Language :: Python :: 3'
     ],
     keywords='psychopy phidgets',

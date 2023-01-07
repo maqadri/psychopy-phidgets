@@ -46,7 +46,7 @@ class PhidgetRelayComponent(BaseComponent):
             stopType=stopType, stopVal=stopVal,
             startEstim=startEstim, durationEstim=durationEstim)
 
-        self.type = 'PhidgetOutputRelays'
+        self.type = 'PhidgetRelay'
         self.url = 'https://www.psychopy.org/builder/components/phidget.html'
 
         self.exp.requireImport(importName='phidgets',
