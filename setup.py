@@ -21,7 +21,6 @@ setup(name='psychopy-phidgets',
               'psychopy_phidgets.experiment.components.phidgets.light',
               'psychopy_phidgets.experiment.components.phidgets.dark',
               'psychopy_phidgets.experiment.components.phidgets.classic'],
-    install_requires=['psychopy'],
     include_package_data=True,
     entry_points={
         'psychopy.hardware': ['PhidgetOutputComponent = psychopy_phidgets.hardware.phidgets:PhidgetOutputComponent'],
