@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 from setuptools import setup
 setup(name='psychopy-phidgets',
-    version='0.1.2',
+    version='0.2.1',
     description='Psychopy plugin providing support for Phidgets',
     long_description='',
     url='https://github.com/maqadri/psychopy-phidgets',
@@ -16,15 +16,14 @@ setup(name='psychopy-phidgets',
     ],
     keywords='psychopy phidgets',
     packages=['psychopy_phidgets',
-              'psychopy_phidgets.hardware',
-              'psychopy_phidgets.experiment.components.phidgets',
-              'psychopy_phidgets.experiment.components.phidgets.light',
-              'psychopy_phidgets.experiment.components.phidgets.dark',
-              'psychopy_phidgets.experiment.components.phidgets.classic'],
+              'psychopy_phidgets.component',
+              'psychopy_phidgets.component.light',
+              'psychopy_phidgets.component.dark',
+              'psychopy_phidgets.component.classic'],
     install_requires=['psychopy'],
     include_package_data=True,
     entry_points={
-        'psychopy.hardware': ['PhidgetOutputComponent = psychopy_phidgets.hardware.phidgets:PhidgetOutputComponent'],
-        'psychopy.experiment.components': ['PhidgetRelayComponent = psychopy_phidgets.experiment.components.phidgets.phidgets:PhidgetRelayComponent']
+        'psychopy.hardware': ['PhidgetOutputComponent = psychopy_phidgets:PhidgetOutputComponent'],
+        'psychopy.experiment.components': ['PhidgetRelayComponent = psychopy_phidgets:PhidgetRelayComponent']
     },
     zip_safe=False)

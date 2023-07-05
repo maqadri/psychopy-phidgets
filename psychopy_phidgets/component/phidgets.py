@@ -49,7 +49,7 @@ class PhidgetRelayComponent(BaseComponent):
         self.type = 'PhidgetRelay'
         self.url = 'https://www.psychopy.org/builder/components/phidget.html'
 
-        self.exp.requireImport(importName='phidgets',
+        self.exp.requireImport(importName='PhidgetOutputComponent',
                                importFrom='psychopy.hardware')
 
         # Order in which the user-settable parameters will be displayed
@@ -83,8 +83,8 @@ class PhidgetRelayComponent(BaseComponent):
             label=_localized['syncToScreen'])
 
     def writeRunOnceInitCode(self, buff):
-        code = ('# Initialize relays\n'
-                '%(name)s = phidgets.PhidgetOutputComponent(channelList = %(channelList)s, '
+        code = ('# Initialize relays LALALALAL\n'
+                '%(name)s = PhidgetOutputComponent(channelList = %(channelList)s, '
                                                            'serialNumber = %(serialNumber)s, '
                                                            'reversedRelay = %(reversedRelay)s)\n'
                 % self.params )
