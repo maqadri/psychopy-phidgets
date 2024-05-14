@@ -15,8 +15,9 @@ from psychopy import prefs, logging
 #Modeled after qmix/pump
 
 from pathlib import Path
-from psychopy.localization import _localized as __localized
-_localized = __localized.copy()
+#from psychopy.localization import _localized as __localized
+# _localized = __localized.copy()
+_localized = {}
 
 _localized.update({'channelList': _translate('Channel List'),
                    'serialNumber': _translate('Serial Number'),
